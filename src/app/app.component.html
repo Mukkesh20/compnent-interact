@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+
+      
+      <app-success (FirstNumber)= "settFirstNumber($event)"
+      (SecondNumber)= "settSecondNumber($event)"></app-success> 
+      <p>First Number : {{FirstNumber}} </p> 
+      <p> Second Number : {{SecondNumber}} </p> 
+      <h3>Click on any button</h3>
+      
+      <button class="btn btn-success" 
+      (click)="onAdd()">Addition</button>
+      <button class="btn btn-danger" 
+      (click)="onSub()">Subtraction</button>
+      <button class="btn btn-warning" 
+      (click)="onDiv()">Division</button>
+      <button class="btn btn-info" 
+      (click)="onMulti()">Multiplication</button>
+     
+      <app-result [Result]="result"></app-result>
+
+    </div>
+  </div>
+</div>
+
