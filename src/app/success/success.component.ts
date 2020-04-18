@@ -16,7 +16,7 @@ export class SuccessComponent implements OnInit {
   @ViewChild('secondNumber') secondNumber: ElementRef;
 
   settingFirstNumber(firstNumber : HTMLInputElement){
-    console.log(firstNumber.value)
+    //console.log(firstNumber.value)
     this.FirstNumber.emit(firstNumber.value);
   }
 
@@ -26,21 +26,11 @@ export class SuccessComponent implements OnInit {
   }
 
   constructor() {
-  fetch("https://wft-geo-db.p.rapidapi.com/v1/locale/locales", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
-		"x-rapidapi-key": "5e6ed25e1fmsh7b59c19a3a2154bp115654jsn4f839fdbde1d"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.log(err);
-});
+ 
 
    }
+
+   
 
   ngOnInit(): void {
   }
