@@ -6,21 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- FirstNumber:number  ;
- SecondNumber:number;
- result: number;
+ FirstNumber:any  ;
+ SecondNumber:any;
+ result: any;
 
 constructor(){
 
 }
 
-  settFirstNumber(firstNumber: number ){
+  settFirstNumber(firstNumber: any ){
    
     this.FirstNumber=firstNumber;
   
   }
 
-  settSecondNumber(secondNumber:number){
+  settSecondNumber(secondNumber:any){
    
     
     this.SecondNumber=secondNumber;

@@ -5,18 +5,18 @@
             <input type="text"
             class="form-control"
             id="firstNumber" placeholder="First Number"
-            [(ngModel)]="firstNumber">
+            #firstNumber>
             <button class="btn btn-success" 
-             (click)="settingFirstNumber()">Set First</button>
+             (click)="settingFirstNumber(firstNumber)">Set First</button>
             <br>
             <input type="text"
             class="form-control"
             id="secondNumber" placeholder="Second Number"
-            [(ngModel)]="secondNumber">
+            #secondNumber>
 
            
             <button class="btn btn-success" 
-            (click)="settingSecondNumber()">Set Second</button>
+            (click)="settingSecondNumber(secondNumber)">Set Second</button>
                     
         </div>
     </div>
